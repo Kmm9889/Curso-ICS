@@ -1,1 +1,2 @@
-Git Hub é uma plataforma de hospedagem de códigos e arquivos ele é como se fosse uma loja de brinquedos para computadores onde as pessoas criam varios projetos para que outras pessoas possam utilizar e dar sugestões para que os criadores desses projeto possam melhorar mais e mais.
+Eu aprendi que Git Hub é uma plataforma de hospedagem de códigos e arquivos ou seja ele é como se fosse uma loja de brinquedos para computadores onde as pessoas criam varios projetos para que outras pessoas possam utilizar e dar sugestões para que os criadores desses projeto possam melhorar mais e mais.
+E Git é como se fosse um assistente que ajuda a voltar as partes antigas e novas que você queira recuperar, assim ajudando para que nada seja perdido,
