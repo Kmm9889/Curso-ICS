@@ -4,5 +4,5 @@ cd Lab2
 mkdir Nomes
 cd Nomes
 echo Maria Joaquina Joana Dora Ana  1>nomes_meninas.txt
-echo JoÒo Jose Kaique Marcos Mario  1>nomes_meninos.txt
+echo JoÃ’o Jose Kaique Marcos Mario  1>nomes_meninos.txt
 find "Maria" *.txt  1>busca.txt
