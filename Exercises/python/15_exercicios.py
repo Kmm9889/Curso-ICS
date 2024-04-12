@@ -1,3 +1,4 @@
 a = "Ola tudo bem com você? "
+total = a + a + a
 
-print(a + a + str(a))
+print(str(total))
