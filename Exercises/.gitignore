@@ -1,0 +1,5 @@
+*.pyc
+venv
+pr_venv
+pr2_venv
+cliente1
