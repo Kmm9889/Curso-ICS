@@ -11,3 +11,12 @@ def ex2(request):
         total = int(valor1) + int(valor2)
         data['total'] = total
     return render(request, 'ex2.html', data)
+
+def ex3(request):
+    data = {}
+    if request.method == 'POST':
+        nome = request.POST.get('nome')
+        idade = request.POST.get('idade')
+        frase = f'Seu nome é {nome} e sua idade é {idade}'
+        data['frase'] = frase
+    return render (request, 'ex3.html', data)
