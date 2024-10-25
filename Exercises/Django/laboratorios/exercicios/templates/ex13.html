@@ -6,20 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 2</h1>
-
-    <p>calculadora de total</p>
+    <h1>Exercício 13</h1>
+    
+    <p>Exiba seu ano de nascimento para saber sua idade</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor1">
-        <input type="number" name="valor2">
+        <input type="number" name="ano_de_nascimento">
         <button type="submit">Enviar</button>
     </form>
-    
-    {% if total %}
-        <h2>Total: {{total}}</h2>
+    {% if data_de_nascimento %}
+        <h2>Você tem {{data_de_nascimento}} anos</h2>
     {% endif %}
-
-
 </body>
 </html>

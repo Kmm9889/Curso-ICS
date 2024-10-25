@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 2</h1>
+    <h1>exercicio 4</h1>
 
-    <p>calculadora de total</p>
+    <p>digite dois numeros para descobrir a soma deles</p>
     <form method="POST">
         {% csrf_token %}
         <input type="number" name="valor1">
@@ -16,8 +16,8 @@
         <button type="submit">Enviar</button>
     </form>
     
-    {% if total %}
-        <h2>Total: {{total}}</h2>
+    {% if soma %}
+        <h2>a soma desse dois numeros é: {{soma}}</h2>
     {% endif %}
 
 

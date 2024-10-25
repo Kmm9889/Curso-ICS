@@ -6,20 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 2</h1>
+    <h1>exercicio 8</h1>
 
-    <p>calculadora de total</p>
+    <p>escreva 1 numero</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor1">
-        <input type="number" name="valor2">
+        <input type="number" name="valor">
         <button type="submit">Enviar</button>
     </form>
     
-    {% if total %}
-        <h2>Total: {{total}}</h2>
+    {% if soma %}
+        <h2>esse numero somado a 1 é: {{soma}}</h2>
     {% endif %}
-
 
 </body>
 </html>

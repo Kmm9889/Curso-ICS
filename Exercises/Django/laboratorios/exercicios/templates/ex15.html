@@ -6,20 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 2</h1>
-
-    <p>calculadora de total</p>
+    <h1>Exercício 15</h1>
+    
+    <p>Escreva uma frase</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor1">
-        <input type="number" name="valor2">
+        <input type="text" name="frase">
         <button type="submit">Enviar</button>
     </form>
-    
-    {% if total %}
-        <h2>Total: {{total}}</h2>
+    {% if frase1 %}
+        <h2>{{frase1}} </h2>
     {% endif %}
-
-
 </body>
 </html>
