@@ -155,10 +155,19 @@ def ex17(request):
 def ex18(request):
     data = {}
     if request.method == 'POST':
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " está a leste de " + str(palavra1)
+        data['frase'] = frase
+    return render(request, 'ex18.html', data)
+
+def ex19(request):
+    data = {}
+    if request.method == 'POST':
         nome = request.POST.get('nome')
         frase = f'Olá {nome}'
         data['frase'] = frase
-    return render (request, 'ex18.html', data)
+    return render (request, 'ex19.html', data)
 
 
 def ex20(request):

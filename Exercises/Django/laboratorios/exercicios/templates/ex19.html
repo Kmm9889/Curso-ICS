@@ -7,16 +7,15 @@
 </head>
 <body>
     <h1>Exercício 18</h1>
-
-    <p>Escreva buritizeiro e logo após belo horizonte</p>
+    
+    <p>escreva seu nome</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="text" name="palavra2" required>
-        <input type="text" name="palavra1" required>
+        <input type="text" name="nome">
         <button type="submit">Enviar</button>
-
-        {% if frase %}
+    </form>
+    {% if frase %}
         <h2>{{frase}}</h2>
     {% endif %}
-
-    </form>
+</body>
+</html>
