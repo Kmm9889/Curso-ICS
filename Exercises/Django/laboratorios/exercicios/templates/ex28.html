@@ -6,20 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 8</h1>
+    <h1>Exercício 28</h1>
 
-    <p>escreva 1 numero</p>
+    <p>Escreva uma função chamada posicao_geografica que receba os nomes de duas cidades e retorne uma frase indicando que a primeira cidade está a leste da segunda.</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor">
+        <input type="text" name="palavra2" required>
+        <input type="text" name="palavra1" required>
         <button type="submit">Enviar</button>
-    </form>
-    
-    {% if soma %}
-        <h2>esse numero somado a 1 é: {{soma}}</h2>
+
+    {% if frase %}
+        <h2>{{frase}}</h2>
     {% endif %}
 
     <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 
-</body>
-</html>
+    </form>

@@ -8,7 +8,7 @@
 <body>
     <h1>Exercício 17</h1>
 
-    <p>Exiba um objeto e uma cor</p>
+    <p>Crie um programa que tenha uma variável com uma string representando o nome de uma cor e outra variável com um objeto (por exemplo, "carro"). Imprima uma frase que combine essas informações, como "carro azul".</p>
     <form method="POST">
         {% csrf_token %}
         <h4>Objeto</h4>
@@ -17,8 +17,10 @@
         <input type="text" name="palavra1" required>
         <button type="submit">Enviar</button>
 
-        {% if frase %}
+    {% if frase %}
         <h2>sua frase é: {{frase}}</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 
     </form>

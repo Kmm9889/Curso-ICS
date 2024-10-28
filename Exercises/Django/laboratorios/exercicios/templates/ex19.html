@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 18</h1>
+    <h1>Exercício 19</h1>
     
-    <p>escreva seu nome</p>
+    <p>Escreva uma função chamada saudacao que aceite um nome como argumento e imprima "Olá, [nome]!".</p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="nome">
@@ -17,5 +17,7 @@
     {% if frase %}
         <h2>{{frase}}</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 </body>
 </html>

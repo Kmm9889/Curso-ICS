@@ -8,7 +8,7 @@
 <body>
     <h1>exercicio 10</h1>
 
-    <p>digite dois numeros para descobrir a soma deles</p>
+    <p> Escreva um programa que tenha duas variáveis inteiras, some esses valores e imprima o resultado da soma.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="number" name="valor1">
@@ -19,3 +19,8 @@
     {% if soma %}
         <h2>a soma desse dois numeros é: {{soma}}</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
+
+</body>
+</html>

@@ -8,7 +8,7 @@
 <body>
     <h1>Exercicios 20</h1>
 
-    <p>Exiba dois numeros para saber a soma deles</p>
+    <p>Crie uma função chamada soma que receba dois números como parâmetros e retorne a soma desses dois números.</p>
     <form method="post">
         {% csrf_token %}
         <input type="number" name="valor1">
@@ -19,5 +19,7 @@
     {% if total %}
         <h2>Total: {{total}}</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 </body>
 </html>

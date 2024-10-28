@@ -6,20 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 8</h1>
-
-    <p>escreva 1 numero</p>
+    <h1>Exercício 25</h1>
+    
+    <p> Desenvolva uma função chamada repete_string que receba uma string frase e um número inteiro n, e retorne a string repetida n vezes.</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor">
+        <input type="text" name="frase">
         <button type="submit">Enviar</button>
     </form>
-    
-    {% if soma %}
-        <h2>esse numero somado a 1 é: {{soma}}</h2>
+    {% if frase1 %}
+        <h2>{{frase1}} </h2>
     {% endif %}
 
     <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
-
 </body>
 </html>

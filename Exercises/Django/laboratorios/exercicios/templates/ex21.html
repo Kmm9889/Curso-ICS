@@ -6,20 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 8</h1>
+    <h1>Exercício 21</h1>
 
-    <p>escreva 1 numero</p>
+    <p> Desenvolva uma função conta_caracteres que receba uma string como argumento e retorne o número de caracteres na string. </p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor">
+        <input type="text" name="palavra" required>
         <button type="submit">Enviar</button>
     </form>
     
-    {% if soma %}
-        <h2>esse numero somado a 1 é: {{soma}}</h2>
+    {% if caracteres is not None %}
+        <h2>Essa frase tem {{ caracteres }} caracteres.</h2>
     {% endif %}
 
     <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
-
 </body>
 </html>

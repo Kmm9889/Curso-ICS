@@ -1,7 +1,10 @@
 from django.urls import path
 from . import views
+import exercicios.views
+
 
 urlpatterns = [
+    path('', exercicios.views.home, name='home'),
     path('ex1/', views.ex1, name='ex1'),
     path('ex2/', views.ex2, name='ex2'),
     path('ex3/', views.ex3, name='ex3'),
@@ -22,4 +25,12 @@ urlpatterns = [
     path('ex18/', views.ex18, name='ex18'),
     path('ex19/', views.ex19, name='ex19'),
     path('ex20/', views.ex20, name='ex20'),
+    path('ex21/', views.ex21, name='ex21'),
+    path('ex22/', views.ex22, name='ex22'),
+    path('ex23/', views.ex23, name='ex23'),
+    path('ex24/', views.ex24, name='ex24'),
+    path('ex25/', views.ex25, name='ex25'),
+    path('ex26/', views.ex26, name='ex26'),
+    path('ex27/', views.ex27, name='ex27'),
+    path('ex28/', views.ex28, name='ex28'),
 ]

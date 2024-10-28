@@ -6,8 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 12</h1>
-    <p> Faça um programa que contenha duas variáveis string, parte1 e parte2, atribua valores a elas, una as duas em uma terceira variável e imprima o resultado.</p>
+    <h1>exercicio 22</h1>
+    <p>Faça uma função chamada concatena que receba duas strings, parte1 e parte2, como parâmetros, una-as em uma nova string e retorne essa nova string.</p>
     <form method="POST">
         {% csrf_token %}
         <br><input type="text" name="parte1"></br>
@@ -15,8 +15,8 @@
         <br><button type="submit">Enviar</button>
     </form>
     
-    {% if parte3 %}
-        <h2>O resultado é: {{parte3}}</h2>
+    {% if nova_string %}
+        <h2>O resultado é: {{nova_string}}</h2>
     {% endif %}
 
     <br><a href="{% url 'home' %}">Lista de exercicios</a></br>

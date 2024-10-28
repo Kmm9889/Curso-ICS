@@ -8,7 +8,7 @@
 <body>
     <h1>Exercício 15</h1>
     
-    <p>Escreva uma frase</p>
+    <p> Desenvolva um programa que crie uma variável frase e atribua a ela uma string qualquer. Imprima essa string três vezes seguidas.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="frase">
@@ -17,5 +17,7 @@
     {% if frase1 %}
         <h2>{{frase1}} </h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 </body>
 </html>

@@ -8,7 +8,7 @@
 <body>
     <h1>Exercício 13</h1>
     
-    <p>Exiba seu ano de nascimento para saber sua idade</p>
+    <p>Crie um programa que tenha uma variável com o ano atual e outra com o ano de nascimento de uma pessoa (use valores fictícios) e imprima a idade dessa pessoa.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="number" name="ano_de_nascimento">
@@ -17,5 +17,7 @@
     {% if data_de_nascimento %}
         <h2>Você tem {{data_de_nascimento}} anos</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 </body>
 </html>

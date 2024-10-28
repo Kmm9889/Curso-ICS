@@ -6,20 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 8</h1>
-
-    <p>escreva 1 numero</p>
+    <h1>Exercício 23</h1>
+    
+    <p> Escreva uma função chamada calcula_idade que receba o ano atual e o ano de nascimento, e retorne a idade da pessoa.</p>
     <form method="POST">
         {% csrf_token %}
-        <input type="number" name="valor">
+        <input type="number" name="ano_de_nascimento">
         <button type="submit">Enviar</button>
     </form>
-    
-    {% if soma %}
-        <h2>esse numero somado a 1 é: {{soma}}</h2>
+    {% if data_de_nascimento %}
+        <h2>Você tem {{data_de_nascimento}} anos</h2>
     {% endif %}
 
     <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
-
 </body>
 </html>

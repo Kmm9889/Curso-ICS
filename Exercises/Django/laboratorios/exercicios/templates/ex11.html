@@ -8,7 +8,7 @@
 <body>
     <h1>Exercício 11</h1>
 
-    <p>escreva uma frase para descobrir quantos caracteres ela tem</p>
+    <p> Desenvolva um programa que tenha uma variável do tipo string com uma frase qualquer e, com print, mostre a quantidade de caracteres dessa frase.    </p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="palavra" required>
@@ -18,5 +18,7 @@
     {% if caracteres is not None %}
         <h2>Essa frase tem {{ caracteres }} caracteres.</h2>
     {% endif %}
+
+    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 </body>
 </html>

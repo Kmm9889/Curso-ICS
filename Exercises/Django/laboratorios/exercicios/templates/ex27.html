@@ -6,19 +6,21 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 18</h1>
+    <h1>Exercício 27</h1>
 
-    <p>Escreva um programa que declare duas variáveis com nomes de cidades e use print para exibir uma frase que diga que uma está a leste da outra, por exemplo, "Paris está a leste de Londres".</p>
+    <p>Crie uma função chamada descreve_cor que receba duas strings, cor e objeto, e retorne uma descrição do tipo "objeto cor".</p>
     <form method="POST">
         {% csrf_token %}
+        <h4>Objeto</h4>
         <input type="text" name="palavra2" required>
+        <h4>cor</h4>
         <input type="text" name="palavra1" required>
         <button type="submit">Enviar</button>
 
-    {% if frase %}
-        <h2>{{frase}}</h2>
-    {% endif %}
+        {% if frase %}
+            <h2>sua frase é: {{frase}}</h2>
+        {% endif %}
 
-    <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
+        <br><a href="{% url 'home' %}">Lista de exercicios</a></br>
 
     </form>

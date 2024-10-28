@@ -1,5 +1,8 @@
 from django.shortcuts import render
 
+def home(request):
+    return render(request, 'home.html')
+
 def ex1(request):
     return render(request, 'ex1.html')
 
@@ -178,3 +181,78 @@ def ex20(request):
         total = int(valor1) + int(valor2)
         data['total'] = total
     return render(request, 'ex20.html', data)
+
+def ex21(request):
+    data = {}
+    if request.method == 'POST':
+        palavra = request.POST.get("palavra") 
+        if palavra:
+            caracteres = len(palavra)
+            data['caracteres'] = caracteres
+        else:
+            data['caracteres'] = 0  
+    return render(request, 'ex21.html', data)
+
+def ex22(request):
+    data = {}
+    if request.method == 'POST':
+        parte1 = request.POST.get("parte1") 
+        parte2 = request.POST.get("parte2")
+        nova_string = str(parte1) + " " + str(parte2)
+        data['nova_string'] = nova_string
+    return render (request, 'ex22.html', data)
+
+def ex23(request):
+    data = {}
+    if request.method == 'POST':
+        Ano_de_nascimento = request.POST.get("ano_de_nascimento") 
+        ano_atual = 2024
+        data_de_nascimento = int(ano_atual) - int(Ano_de_nascimento)
+        data['data_de_nascimento'] = data_de_nascimento
+    return render(request, 'ex23.html', data)
+
+def ex24(request):
+    data = {}
+    if request.method == 'POST':
+        a = request.POST.get("a")
+        b = request.POST.get("b")
+        troca = a, b = b, a
+        data['troca'] = troca
+    return render(request, 'ex24.html', data)
+
+def ex25(request):
+    data = {}
+    if request.method == 'POST':
+        frase = request.POST.get("frase") 
+        frase1 = str(frase) + ' ' + str(frase) + ' ' + str(frase)
+        data['frase1'] = frase1
+    return render(request, 'ex25.html', data)
+
+def ex26(request):
+    data = {}
+    if request.method == 'POST':
+        valor1 = request.POST.get("valor1") 
+        valor2 = request.POST.get("valor2")
+        valor3 = request.POST.get("valor3") 
+        valor4 = request.POST.get("valor4")
+        media = (int(valor1) + int(valor2) + int(valor3) + int(valor4))/4
+        data['media'] = media
+    return render (request, 'ex26.html', data)
+
+def ex27(request):
+    data = {}
+    if request.method == 'POST':
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " " + str(palavra1) + " " 
+        data['frase'] = frase
+    return render (request, 'ex26.html', data)
+
+def ex28(request):
+    data = {}
+    if request.method == 'POST':
+        palavra1 = request.POST.get("palavra1") 
+        palavra2 = request.POST.get("palavra2")
+        frase = str(palavra2) + " está a leste de " + str(palavra1)
+        data['frase'] = frase
+    return render(request, 'ex18.html', data)
