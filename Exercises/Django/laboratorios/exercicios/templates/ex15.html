@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 15</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
     
-    <p> Desenvolva um programa que crie uma variável frase e atribua a ela uma string qualquer. Imprima essa string três vezes seguidas.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="frase">

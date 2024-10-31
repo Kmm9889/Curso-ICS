@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 23</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
     
-    <p> Escreva uma função chamada calcula_idade que receba o ano atual e o ano de nascimento, e retorne a idade da pessoa.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="number" name="ano_de_nascimento">

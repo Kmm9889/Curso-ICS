@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 11</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
 
-    <p> Desenvolva um programa que tenha uma variável do tipo string com uma frase qualquer e, com print, mostre a quantidade de caracteres dessa frase.    </p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="palavra" required>

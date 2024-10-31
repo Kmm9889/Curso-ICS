@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 19</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
     
-    <p>Escreva uma função chamada saudacao que aceite um nome como argumento e imprima "Olá, [nome]!".</p>
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="nome">

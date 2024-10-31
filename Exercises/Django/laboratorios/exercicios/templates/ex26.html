@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>exercicio 26</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
 
-    <p>Faça uma função chamada media que receba quatro números como argumentos e retorne a média desses números.</p>
+    {% csrf_token %}
     <form method="POST">
-        {% csrf_token %}
         <input type="number" name="valor1">
         <input type="number" name="valor2">
         <input type="number" name="valor3">

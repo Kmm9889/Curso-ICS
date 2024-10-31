@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 13</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
     
-    <p>Crie um programa que tenha uma variável com o ano atual e outra com o ano de nascimento de uma pessoa (use valores fictícios) e imprima a idade dessa pessoa.</p>
     <form method="POST">
         {% csrf_token %}
         <input type="number" name="ano_de_nascimento">

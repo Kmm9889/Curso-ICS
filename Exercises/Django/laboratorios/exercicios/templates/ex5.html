@@ -6,9 +6,9 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 5</h1>
-     
-    <p>escreva uma frase para descobrir quantos caracteres ela tem</p>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
+    
     <form method="POST">
         {% csrf_token %}
         <input type="text" name="palavra" required>

@@ -6,11 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Exercício 27</h1>
+    <h1>{{titulo}}</h1>
+    <br>{{descrição}}</br>
 
-    <p>Crie uma função chamada descreve_cor que receba duas strings, cor e objeto, e retorne uma descrição do tipo "objeto cor".</p>
+    {% csrf_token %}
     <form method="POST">
-        {% csrf_token %}
         <h4>Objeto</h4>
         <input type="text" name="palavra2" required>
         <h4>cor</h4>
